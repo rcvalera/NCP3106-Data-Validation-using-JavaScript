@@ -3,30 +3,44 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="Registration-Form.css">
 	<meta charset="utf-8">
+<style>
+	.column {
+		float: left;
+		width: 50%;
+		padding: 10px;
+		height: 300px;
+		}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+</style>
 </head>
 <body>
 
 			<div class="wrapper">
-		<div class="title">SIGNUP</div>
+	<div class="title">SIGNUP</div>
 
-			<form id="SignUpForm">
+		<form id="SignUpForm" action="#" method="POST">
 				<div class ="field">
-					<input type ="text" name="last-name" id="last-name" required autocomplete="off">
+					<input type ="text" name="last-name" id="last-name" pattern="[A-Za-z]{3,}" required autocomplete="off">
 					<label>Last Name</label>
 				</div>
 
 				<div class ="field">
-					<input type ="text" name="first-name" id="first-name" required autocomplete="off">
+					<input type ="text" name="first-name" id="first-name" pattern="[A-Za-z]{3,}" required autocomplete="off">
 					<label>First Name</label>
 				</div>
 
 				<div class ="field">
-					<input type ="text" class="initial"  name="mid-initial" size="1"  required autocomplete="off">
+					<input type ="text" class="initial"  name="mid-initial" size="2" pattern="[A-Za-z]{,2}" required autocomplete="off">
 					<label>M.I.</label>
 				</div>
 
 				<div class ="field">
-					<input type ="text" name="stdnt-num" id ="stnt-num" required>
+					<input name="studnum" type="number" required>
 					<label>Student Number</label>
 				</div>
 
@@ -52,11 +66,12 @@
 				</div>
 
 				<div class ="field">
-					<input type ="email" name="email" id="email" required>
+					<input type ="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 					<label>UE Email Address</label>
 				</div>
+			
 
-
+				<input type="submit" name="submit" value="Submit" />
 				
 
 </div>
