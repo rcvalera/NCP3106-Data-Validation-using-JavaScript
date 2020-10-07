@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.wrapper {
+  height: 650px;
+  width: 750px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+
+.wrapper .title {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 90px;
+  color: white;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background-color: #1EA896;
+}
+
+.wrapper form {
+  padding: 10px 30px 50px 30px;
+}
+
+
+.wrapper form .input-name {
+  height: 50px;
+  width: 100%;
+  margin-top: 35px;
+  position: relative;    
+}
+
+.wrapper form .input-name input {
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+
+
+
+.wrapper form .input-name input:focus, form .input-name input:valid {
+  border-color: #1d976c;
+} 
+
+
+.name {
+    width: 47%;
+    padding:8px 0 8px 0px;
+}
+
+.input-name span{
+    margin-left: 35px;
+}
+
+.text-name{
+    width: 47%;
+    padding:8px 0 8px 0px;
+}
+
+
+
+
+.mid-initial {
+  margin-left: 35px;
+  width: 11%;
+  padding:8px 0 8px 0px;
+}
+
+.last-name {
+  width: 47%;
+  padding:8px 0 8px 0px;
+}
+
+.select {
+  width: 15%;
+  padding:8px 0 0px 0px;
+}
+
+.birthday {
+  margin-left:  56px;
+  width: 23%;
+  padding:8px 0 0px 0px;
+}
+
+.user {
+  margin-left: 37px;
+  width: 47%;  
+}
+
+.pass {
+  margin-left: 37px;
+  width: 47%;
+}
+
+.pass-repeat {
+  margin-left: 37px;
+  width: 47%;
+}
+
+.bttn {
+  margin-top: 70px;
+  margin-left: 280px;
+  width: 20%;
+
+}
+
+
+.first{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+.last{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+.mid{
+  position: absolute;
+  top: 50%;
+  left: 260px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+
+.mobile {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+.email {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+
+}
+
+.usrname {
+  position: absolute;
+  top: 50%;
+  left: 380px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+
+
+}
+
+.pssword {
+  position: absolute;
+  top: 50%;
+  left: 380px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+.confpass {
+  position: absolute;
+  top: 50%;
+  left: 380px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+form .input-name input:focus ~ label, form .input-name input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #1d976c;
+  background: #fff;
+  transform: translateY(-50%);
+}
