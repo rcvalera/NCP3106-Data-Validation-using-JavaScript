@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Registration-Form.css">
+	<meta charset="utf-8">
+<style>
+	.column {
+		float: left;
+		width: 50%;
+		padding: 10px;
+		height: 300px;
+		}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		}
+</style>
+</head>
+<body>
+
+			<div class="wrapper">
+	<div class="title">SIGNUP</div>
+
+		<form id="SignUpForm" action="#" method="POST">
+				<div class ="field">
+					<input type ="text" name="last-name" id="last-name" pattern="[A-Za-z]{3,}" required autocomplete="off">
+					<label>Last Name</label>
+				</div>
+
+				<div class ="field">
+					<input type ="text" name="first-name" id="first-name" pattern="[A-Za-z]{3,}" required autocomplete="off">
+					<label>First Name</label>
+				</div>
+
+				<div class ="field">
+					<input type ="text" class="initial"  name="mid-initial" size="2" pattern="[A-Za-z]{,2}" required autocomplete="off">
+					<label>M.I.</label>
+				</div>
+
+				<div class ="field">
+					<input name="studnum" pattern="[0-9]{11}" type="number" required>
+					<label>Student Number</label>
+				</div>
+
+				<div class="year-option">	
+					<label for="YearLevel"></label>
+					<select class="select" name="year-level" id="year-level">
+					  <option value="select-gender">Year Level:</option>
+					  <option value="first-year">1st Year</option>
+					  <option value="second-year">2nd Year</option>
+					  <option value="third-year">3rd Year</option>
+					  <option value="fifth-year">5th Year</option>
+						</select>
+						</div>
+
+				<div class="date">
+					
+					<input type="date" id="birthday" name="birthday" autocomplete="off" required>
+				</div>
+
+				<div class ="field">
+					<select>
+						<option>+ 63</option>
+					</select>
+					<input type ="number" name="mobile-num" id="mobile-num" required>
+					<label>Mobile Number</label>
+				</div>
+
+				<div class ="field">
+					<input type ="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+					<label>UE Email Address</label>
+				</div>
+			
+
+				<input type="submit" name="submit" value="Submit" />
+				
+
+</div>
+</form>
+
+
+</body>
+</html>

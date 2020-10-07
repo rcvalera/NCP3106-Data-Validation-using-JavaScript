@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<body style= "background-image: url('images/bg.png'); background-position: center ;background-size: cover ;">
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="LogIn.css">
+</head>
+<body>
+
+  <div class="wrapper">
+   	<div class="title">ACCOUNT LOGIN</div>
+		<form id="LogInForm" action="Prelim-LogInProcess.php" method="POST">
+    		 <div class="field">
+          		<input type="text" name="username" id="username" required autocomplete="off">
+          		<label for="username">Username</label>
+				<span id="text"></span>
+        			</div>
+			<div class="field">
+          		<input type="password" name="password" id="password" required>
+          		<label for="password">Password</label>
+        			</div>
+	<div class="content">
+         	 <div class="checkbox">
+            	<input type="checkbox" id="show-pass" onclick="myFunction()">
+            	<label for="show-pass">Show Password</label>
+         			 </div>
+
+          	<div class="checkbox1">
+          		<input type="checkbox" id="remember-me">
+            	<label for="remember-me">Remember Me</label>
+           			 </div>
+    </div>
+
+			<div class="field">
+          		<input type="submit" name="submit" id="submit" value="Login"></div>
+
+			<div class="signup-link"> New Member? <a href="Prelim-SignUp.html">Sign Up</a></div>
+
+
+
+</form>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+</body>
+</html>
