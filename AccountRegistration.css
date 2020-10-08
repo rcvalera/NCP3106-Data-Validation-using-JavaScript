@@ -43,11 +43,12 @@ html,body {
 }
 
 .wrapper form .input-name input {
+  padding-left: 20px;	
   height: 100%;
   outline: none;
   font-size: 17px;
   border: 1px solid lightgrey;
-  border-radius: 15px;
+  border-radius: 20px;
   transition: all 0.4s ease;
 }
 
@@ -74,9 +75,8 @@ html,body {
 
 
 
-
 .mid-initial {
-  margin-left: 35px;
+  margin-left: 20px;
   width: 11%;
   padding:8px 0 8px 0px;
 }
@@ -87,14 +87,19 @@ html,body {
 }
 
 .select {
-  width: 15%;
-  padding:8px 0 0px 0px;
+  width: 16%;
+  border-radius: 20px;
+  padding:8px 0px 8px 0px;
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  border: 1px solid lightgrey;
 }
 
 .birthday {
-  margin-left:  56px;
-  width: 23%;
-  padding:8px 0 0px 0px;
+  margin-left:  30px;
+  width: 26%;
+  padding:8px 0 8px 0px;
 }
 
 .user {
@@ -103,24 +108,33 @@ html,body {
 }
 
 .pass {
-  margin-left: 37px;
+  margin-left: 30px;
   width: 47%;
 }
 
 .pass-repeat {
-  margin-left: 37px;
+  margin-left: 32px;
   width: 47%;
 }
 
 .bttn {
+  border-radius: 20px;
   margin-top: 70px;
-  margin-left: 280px;
-  width: 20%;
+  margin-left: 243px;
+  width: 30%;
+  color: white;
+  border: none;
+  padding:8px 0 8px 0px;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #FF715B;
+  transition: all 0.3s ease;
 
 }
 
 
-.first{
+.first {
   position: absolute;
   top: 50%;
   left: 20px;
@@ -220,6 +234,10 @@ html,body {
   transition: all 0.4s ease;
 }
 
+
+
+}
+
 form .input-name input:focus ~ label, form .input-name input:valid ~ label{
   top: 0%;
   font-size: 16px;
@@ -227,3 +245,17 @@ form .input-name input:focus ~ label, form .input-name input:valid ~ label{
   background: #fff;
   transform: translateY(-50%);
 }
+
+
+.wrapper form .input-name1 input {
+  padding-left: 20px;	
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+
+
