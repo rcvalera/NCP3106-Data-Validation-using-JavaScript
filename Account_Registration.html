@@ -4,42 +4,71 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="AccountRegistration.css">
+    
 </head>
+
 <body>
-
-
 
     <div class="wrapper">
         <div class="title">ACCOUNT REGISTRATION</div>
 
-            <form>
+            <form id="AccountRegistration" action="#" class="AccountRegistration" method="POST" onsubmit="return validateMyForm()">
                 
 <div class="input-name">
 
-                    <input type="text" class="last-name" name="last-name" required autocomplete="off">
+                    <input type="text" class="last-name" id="lastname" name="last-name"  autocomplete="off"  >
                     <label class="last">Last Name</label>
 
-                    <input type="text" class="user" name="user-name" required autocomplete="off">
+    <div id="label-lastname" class="error" style="display: none;"> </div>
+
+                    <input type="text" class="user" id="userName" name="user-name"  autocomplete="off" >
                     <label class="usrname">Username</label>
 
+    <div id="label userNamee" class="error" style="display: none;"> </div>
+
+
                 </div>
 
 <div class="input-name">
-                    <input type="text"  class="first-name" name="first-name" required autocomplete="off">
+
+                    <input type="text"  class="first-name" id="firstname" name="first-name"  autocomplete="off" >
                     <label class="first">First Name</label>
+
+    <div id="label-firstname" class="error" style="display: none;"> </div>
+
                     
-                    <input type="text" class="mid-initial" name="mid-initial" required>
+                    <input type="text" class="mid-initial" id="mid" name="mid-initial">
                     <LABEL class="mid">M.I.</LABEL>
 
-                    <input type="password" class="pass" required>
+    <div id="label-mid" class="error" style="display: none;"> </div>
+
+
+                    <input type="password" id="password" class="pass" >
                     <label class="pssword">Password</label>
-                   
+
+    <div id="label-password" class="error" style="display: none;"> </div>
+
                     
+                </div>
+
+
+<div class="input-name">
+
+                    <input type="text" id="studnum" class="stud-num" >
+                    <label class="stud">Student Number</label>
+
+                                  <input type="password" id="passwordRpt" class="pass-repeat" >
+                    <label class="confpass">Confirm-Password</label>
+
+
+
+    <div id="label-passwordRpt" class="error" style="display: none;"> </div>
+
                 </div>
 
 <div class="input-name">
 
-                    <select class="select" name="year-level" id="year-level">
+                    <select class="select" name="year-level" id="yearLevel">
                       <option value="select-gender"> Year Level: </option>
                       <option value="first-year"> 1st Year </option>
                       <option value="second-year"> 2nd Year </option>
@@ -47,37 +76,217 @@
                       <option value="fifth-year"> 5th Year </option>
                         </select>
 
-                    <input type="date" class="birthday" id="birthday" name="birthday"  required>
+                    <input type="date" class="birthday" id="bday" name="birthday" >
 
-                    <input type="password" class="pass-repeat" required>
 
-                    <label class="confpass">Confirm-Password</label>
+
+      
                         
                 </div>
 
 <div class="input-name">
 
-                    <input type="text" class="text-name" name="mobile-num" required autocomplete="off">
+                    <input type="text" class="text-name" id="mobileNum" name="mobile-num"  autocomplete="off">
                     <label class="mobile">Mobile Number</label>
+
+    <div id="label-mobileNum" class="error" style="display: none;"> </div>
+
                 </div>
 
 <div class="input-name">
 
-                      <input type="Email" class="text-name" name="ue-email"  required autocomplete="off">
+                      <input type="email" class="text-name" id="emailAdd" name="ue-email"   autocomplete="off">
+
                       <label class="email">UE Email Address</label>
 
-                      
-
+    <div id="label-emailAdd" class="error" style="display: none;"> </div>
                 </div>
 
 
-
-                <input type="submit" class="bttn" value="REGISTER">
+                <input type="submit" class="bttn" value="SUBMIT">
                
 
                 
 </div>
 </form>
 
-</body>
+
+
+
+<script type="text/javascript">
+    
+
+ function validateMyForm () {
+
+    var lname = document.getElementById('lastname').value;
+    var fname = document.getElementById('firstname').value;
+    var mname = document.getElementById('mid').value;
+    var stnum = document.getElementById('studnum').value;
+    var mobnum = document.getElementById('mobileNum').value;
+    var uemail = document.getElementById('emailAdd').value;
+    var birthdate = document.getElementById('bday').value;
+    var uname = document.getElementById('userName').value;
+    var pword= document.getElementById('password').value;
+    var pwordrpt = document.getElementById('passwordRpt').value;
+
+
+    var valid =1;
+    var letters = /^[A-Za-z]+$/;
+    var numbers = /^[-+]?[0-9]+$/;
+    var letterNumber = /^[0-9a-zA-Z]+$/;
+    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var unameformat = /^[A-Za-z-_]+$/;
+    var mnlen = 1;
+    var mxlen = 2;
+   
+
+
+
+
+    if(lname=="" && valid==1) {
+        alert('Please Enter your Last Name');
+
+        valid=0;
+
+    } 
+
+
+    if(!lname.match(letters) && valid==1) {
+        alert('Accepts alphabet only!');
+
+        valid=0;
+    }
+
+    if(fname=="" && valid==1){
+        alert('Please Enter your First Name');
+
+        valid=0;
+
+    } 
+
+
+    if(!fname.match(letters) && valid==1) {
+        alert('Accepts alphabet only!');
+
+        valid=0;
+
+    } 
+
+    if(mname=="" && valid==1){
+        alert('Please enter your Middle Initial ');
+
+        valid=0;
+
+    } 
+
+
+    if( !mname.match(letters) && !mname.length < mnlen || !mname.length >  mxlen && valid==1) {
+
+        alert(" Accepts alphabet only and Max of  " +mxlen+ " characters only!");
+        
+        valid=0;
+
+
+    }  
+
+
+    if (stnum=="" && valid==1) {
+
+        alert('Please enter your student number');
+
+        valid=0;
+
+    } 
+
+    if (!stnum.match(numbers) && valid==1) {
+        alert('Input numbers only!')
+
+        valid=0;
+
+
+    }
+
+    if(birthdate=="" && valid==1) {
+
+        alert('Please enter your birthdate')
+
+        valid=0;
+    }
+
+    if(mobnum=="" && valid==1) {
+        alert('Please enter your Mobile Number');
+
+        valid=0;
+
+    }  
+
+    if(!mobnum.match(numbers) && valid==1) {
+        alert('Accepts number only!');
+
+        valid=0;
+
+
+    } 
+
+    if(uemail=="" && valid==1) {
+        alert('Please enter your email');
+
+        valid=0;
+
+    }  
+
+    if(!uemail.match(mailformat) && valid==1) {
+        alert('Please enter a valid email!');
+
+        valid=0;
+
+    } 
+
+
+    if (uname=="" && valid==1) {
+        alert('Please enter username')
+
+        valid=0;
+    }
+
+    if (!uname.match(unameformat)  && valid==1) {
+        alert("Invalid username format!");
+
+
+        valid=0;
+    } 
+
+
+    if (pword=="" && valid==1) {
+        alert('Please enter password')
+
+        valid=0;
+    }
+
+    if (!pword.match(letterNumber)&& valid==1) {
+        alert('Invalid password format');
+
+        valid=0;
+    }
+
+
+
+
+
+
+
+    if(valid == 1) {
+        return true;
+
+    } else {
+        return false;
+    }
+
+ }
+
+
+
+</script>
+
 </html>
+
