@@ -12,7 +12,7 @@
     <div class="wrapper">
         <div class="title">ACCOUNT REGISTRATION</div>
 
-            <form id="AccountRegistration" action="#" class="AccountRegistration" method="POST" onsubmit="return validateMyForm()">
+            <form id="AccountRegistration" action="AccountRegistration.php" class="AccountRegistration" method="POST" onsubmit="return validateMyForm()">
                 
 <div class="input-name">
 
@@ -43,7 +43,7 @@
     
 
 
-                    <input type="password" id="password" class="pass" >
+                    <input type="password" id="password" class="pass" name="pssword" >
                     <label class="pssword">Password</label>
 
     
@@ -54,15 +54,11 @@
 
 <div class="input-name">
 
-                    <input type="text" id="studnum" class="stud-num" autocomplete="off" >
+                    <input type="text" id="studnum" class="stud-num" name="stud-number" autocomplete="off" >
                     <label class="stud">Student Number</label>
 
-                    <input type="password" id="passwordRpt" class="pass-repeat" >
+                    <input type="password" id="passwordRpt" name="passwordrepeat" class="pass-repeat" >
                     <label class="confpass">Confirm-Password</label>
-
-                    <br>
-
-                    <input type="checkbox" name="" class="chckbox"> <pr class="text">Terms and Conditions</pr>
 
                     
 
@@ -81,6 +77,8 @@
 
 
                     <input type="date" class="birthday" id="bday" name="birthday">
+
+                     
 
                      
                         
@@ -146,18 +144,18 @@
     var unameformat = /^[A-Za-z_-]{8,15}$/;
     var pwordformat = /^[0-9a-zA-Z]{8,20}$/;
     var stdnumbers = /^[0-9]{11}$/;
+    var mobnumber = /^[-+]?[0-9]{10}$/;
     var midformat = /^[A-Za-z]{1,2}$/;
     var mnlen = 1;
     var mxlen = 2;
-   
 
-
-
+    
 
     if(lname=="" && valid==1) {
         alert('Please enter your Last Name');
 
         valid=0;
+        
 
     } 
 
@@ -225,6 +223,8 @@
         valid=0;
     }
 
+
+
     if(mobnum=="" && valid==1) {
         alert('Please enter your Mobile Number');
 
@@ -232,8 +232,8 @@
 
     }  
 
-    if(!mobnum.match(numbers) && valid==1) {
-        alert('Accepts number only!');
+    if(!mobnum.match(mobnumber) && valid==1) {
+        alert('Accepts number only! Maximum of 10 numbers only!');
 
         valid=0;
 
@@ -259,6 +259,7 @@
         alert('Please enter username');
 
         valid=0;
+
     }
 
     if (!uname.match(unameformat) && valid==1) {

@@ -6,10 +6,10 @@ $mid_initial = $_POST['mid-initial'];
 $studnumber = $_POST['stud-number']; 
 $year_level = $_POST['year-level'];
 $birthday = $_POST['birthday'];
-$mobnumber = $_POST['mobnumber']; 
+$mobnumber = $_POST['mobile-num']; 
 $email = $_POST['ue-email'];
 $username = $_POST['user-name'];
-$password = $_POST['pass']; 
+$password = $_POST['pssword']; 
 $passwordRepeat = $_POST['passwordrepeat']; 
 
 

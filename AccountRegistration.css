@@ -8,11 +8,13 @@
 html,body {
   height: 100%;
   width: 100%;
+  background-image: url("bckgrnd.gif");
+  background-size: cover;
   display: grid;
   place-items: center;
 }
 .wrapper {
-  height: 715px;
+  height: 720px;
   width: 750px;
   background: white;
   border-radius: 15px;
@@ -156,8 +158,8 @@ html,body {
 
 .bttn {
   border-radius: 20px;
-  margin-top: 50px;
-  margin-left: 243px;
+  margin-bottom:  600px;
+  margin-left: 430px;
   width: 30%;
   color: white;
   border: none;
@@ -282,10 +284,6 @@ form .input-name input:focus ~ label, form .input-name input:valid ~ label{
 }
 
  
-.chckbox {
-margin-left: 390px;
-}
-
 
 
 
