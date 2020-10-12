@@ -69,6 +69,13 @@ html,body {
 }
 
 .text-name{
+    width: 35%;
+    padding:8px 0px 8px 0px;
+    margin-left: 18px;
+}
+
+
+.text-name1{
     width: 47%;
     padding:8px 0 8px 0px;
 }
@@ -92,8 +99,21 @@ html,body {
   height: 100%;
   outline: none;
   font-size: 17px;
-  border: 1px solid lightgrey;
+  border-color:  #1d976c;
 }
+
+.num {
+
+  width: 9%;
+  border-radius: 20px;
+  padding:8px 0px 8px 5px;
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  border-color: #1d976c;
+}
+
+
 
 .birthday {
   margin-left:  30px;
@@ -191,7 +211,7 @@ html,body {
 .mobile {
   position: absolute;
   top: 50%;
-  left: 20px;
+  left: 105px;
   color: #999999;
   font-weight: 400;
   font-size: 17px;
@@ -260,6 +280,12 @@ form .input-name input:focus ~ label, form .input-name input:valid ~ label{
   background: #fff;
   transform: translateY(-50%);
 }
+
+ 
+.chckbox {
+margin-left: 390px;
+}
+
 
 
 
