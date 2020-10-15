@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  background-image: url("bckgrnd.gif");
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+.wrapper {
+  height: 720px;
+  width: 750px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.3);
+}
+
+.wrapper .title {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 90px;
+  color: white;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background-color: #1EA896;
+}
+
+.wrapper form {
+  padding: 10px 30px 50px 30px;
+}
+
+
+.wrapper form .input-name {
+  height: 50px;
+  width: 100%;
+  margin-top: 35px;
+  position: relative;    
+}
+
+.wrapper form .input-name input {
+  padding-left: 20px;	
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  border: 1px solid lightgrey;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+
+
+
+.wrapper form .input-name input:focus, form .input-name input:valid {
+  border-color: #1d976c;
+} 
+
+
+.name {
+    width: 47%;
+    padding:8px 0 8px 0px;
+}
+
+.input-name span{
+    margin-left: 35px;
+}
+
+.text-name{
+    width: 35%;
+    padding:8px 0px 8px 0px;
+    margin-left: 18px;
+}
+
+
+.text-name1{
+    width: 47%;
+    padding:8px 0 8px 0px;
+}
+
+
+.mid-initial {
+  margin-left: 18px;
+  width: 11%;
+  padding:8px 0px 8px 0px;
+}
+
+.last-name {
+  width: 47%;
+  padding:8px 0px 8px 0px;
+}
+
+.select {
+  width: 16%;
+  border-radius: 20px;
+  padding:8px 0px 8px 0px;
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  border-color:  #1d976c;
+}
+
+.num {
+
+  width: 9%;
+  border-radius: 20px;
+  padding:8px 0px 8px 5px;
+  height: 100%;
+  outline: none;
+  font-size: 17px;
+  border-color: #1d976c;
+}
+
+
+
+.birthday {
+  margin-left:  30px;
+  width: 26%;
+  padding:8px 0 8px 0px;
+}
+
+.user {
+  margin-left: 37px;
+  width: 47%;  
+}
+
+.pass {
+  margin-left: 34px;
+  width: 47%;
+}
+
+.pass-repeat {
+  margin-left: 37px;
+  width: 47%;
+}
+
+.stud-num{
+  width: 47%;
+}
+
+
+
+.stud {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+.bttn {
+  border-radius: 20px;
+  margin-bottom:  600px;
+  margin-left: 430px;
+  width: 30%;
+  color: white;
+  border: none;
+  padding:8px 0 8px 0px;
+  font-size: 19px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #FF715B;
+  transition: all 0.3s ease;
+
+}
+
+
+.first {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+.last{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+.mid{
+  position: absolute;
+  top: 50%;
+  left: 260px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+
+.mobile {
+  position: absolute;
+  top: 50%;
+  left: 105px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+.email {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+
+}
+
+.usrname {
+  position: absolute;
+  top: 50%;
+  left: 380px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+
+
+}
+
+.pssword {
+  position: absolute;
+  top: 50%;
+  left: 380px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+.confpass {
+  position: absolute;
+  top: 50%;
+  left: 380px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+}
+
+
+
+form .input-name input:focus ~ label, form .input-name input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #1d976c;
+  background: #fff;
+  transform: translateY(-50%);
+}
+
+form .input-name .chckbox {
+  margin-left: 380px;
+  line-height: 150px;
+
+}
+ 
+
+
+
+
+
