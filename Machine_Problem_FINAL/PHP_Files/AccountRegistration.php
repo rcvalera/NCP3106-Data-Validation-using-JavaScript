@@ -30,17 +30,25 @@ $passwordRepeat = $_POST['passwordrepeat'];
 
 
 function insertRecord($last_name,$first_name,$mid_initial,$studnumber,$year_level,$birthday,$mobnumber,$email,$username,$password) {
+	
  try {
  require 'openDB.php';
      
   $sql = "INSERT INTO databasae2 (lastName, firstName, middleInitial, studNumber, YearLevel, Birthday, Mobile, Email, Username, Password) VALUES (?,?,?,?,?,?,?,?,?,?)";
      
+     	echo '<script>
+  				alert("Username is already taken!");
+					</script>';
+
+		echo '<script>
+				window.history.go(-1);
+					</script>';
      
   // use exec() because no results are returned 
      $conn->prepare($sql)->execute([$last_name,$first_name,$mid_initial,$studnumber,$year_level,$birthday,$mobnumber,$email,$username,$password]);
 
   echo '<script>
-  				alert("Congratulations, you are now registered!");
+  				alert("Registered Successfully!");
 					</script>';
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();

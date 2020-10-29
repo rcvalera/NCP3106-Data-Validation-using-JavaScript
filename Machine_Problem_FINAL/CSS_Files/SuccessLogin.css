@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background-image: url("bckgrnd.gif");
+  background-size: cover;
+}
+
